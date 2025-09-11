@@ -1,0 +1,24 @@
+meta {
+  name: Put Company
+  type: http
+  seq: 3
+}
+
+put {
+  url: localhost/api/companies/2
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "company": {
+      "name": "Updated Company Name",
+      "established_date": "2010-05-05"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

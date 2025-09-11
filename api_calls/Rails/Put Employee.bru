@@ -1,0 +1,26 @@
+meta {
+  name: Put Employee
+  type: http
+  seq: 5
+}
+
+put {
+  url: localhost/api/employees/3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "employee": {
+      "name": "Jane Doe",
+      "start_date": "2024-01-01",
+      "level": 2,
+      "company_id": 2
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

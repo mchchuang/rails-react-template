@@ -1,0 +1,26 @@
+meta {
+  name: Post Employee
+  type: http
+  seq: 4
+}
+
+post {
+  url: localhost/api/employees
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "employee": {
+      "name": "Martin Chuang", 
+      "start_date": "2023-09-10", 
+      "level": 1, 
+      "company_id": 2
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

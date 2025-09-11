@@ -1,0 +1,15 @@
+meta {
+  name: Get Companies
+  type: http
+  seq: 1
+}
+
+get {
+  url: localhost/api/companies
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
